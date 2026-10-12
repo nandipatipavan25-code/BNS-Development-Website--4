@@ -7,8 +7,6 @@ import {
   MapPin,
   Share2,
   Check,
-  Phone,
-  Mail,
   Building2,
   ArrowRight,
   ArrowUpRight,
@@ -312,56 +310,7 @@ export default function NewsDetailPage({
         </div>
 
         {/* ========================================================
-            3. PUBLICATION INFORMATION & OFFICIAL PRESS CONTACT
-            ======================================================== */}
-        <ScrollReveal direction="up" delay={0.08}>
-          <div className="rounded-3xl bg-white border border-black/[0.08] p-6 sm:p-10 shadow-sm space-y-6">
-            <div className="flex items-center gap-2 font-mono text-xs uppercase tracking-wider text-[#ED1C24] font-semibold">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#ED1C24]" />
-              <span>Official Press &amp; Media Inquiries</span>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-              <div className="space-y-3">
-                <h3 className="text-xl sm:text-2xl font-display font-semibold text-black/95">
-                  About BNS Development
-                </h3>
-                <p className="text-sm text-black/70 font-sans leading-relaxed">
-                  BNS Development is an integrated real estate development and design-build delivery general contracting firm serving high-growth urban corridors across South Florida and Central Texas. The firm leads commercial, multifamily, residential, and ground-up developments from pre-development feasibility through turnkey closeout.
-                </p>
-              </div>
-
-              {/* Direct Media Desk Card */}
-              <div className="p-6 rounded-2xl bg-[#FAFAF8] border border-black/[0.06] space-y-4">
-                <div className="space-y-1">
-                  <p className="font-semibold text-sm text-black/90 font-sans">{article.pressContact.name}</p>
-                  <p className="text-xs text-black/60 font-sans">{article.pressContact.title}</p>
-                  <p className="text-xs text-black/50 font-sans">{article.pressContact.location}</p>
-                </div>
-
-                <div className="pt-2 flex flex-col gap-2.5">
-                  <a
-                    href="tel:7863683009"
-                    className="inline-flex items-center gap-2.5 text-xs sm:text-sm font-sans font-medium text-black/80 hover:text-[#ED1C24] transition-colors"
-                  >
-                    <Phone className="w-4 h-4 text-[#ED1C24]" />
-                    <span>{article.pressContact.phone}</span>
-                  </a>
-                  <a
-                    href="mailto:contact@bns-development.com"
-                    className="inline-flex items-center gap-2.5 text-xs sm:text-sm font-sans font-medium text-black/80 hover:text-[#ED1C24] transition-colors"
-                  >
-                    <Mail className="w-4 h-4 text-[#ED1C24]" />
-                    <span>{article.pressContact.email}</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </ScrollReveal>
-
-        {/* ========================================================
-            4. RELATED NEWS & PRESS RELEASES (The other 2)
+            3. RELATED NEWS & PRESS RELEASES
             ======================================================== */}
         <section className="pt-8 sm:pt-12 space-y-8 border-t border-black/[0.08]">
           <div className="flex items-center justify-between">
