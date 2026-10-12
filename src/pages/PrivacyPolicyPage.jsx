@@ -35,11 +35,11 @@ export default function PrivacyPolicyPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full space-y-3.5">
           <div className="flex items-center gap-2.5">
             <span className="w-6 h-[2px] bg-[#ED1C24]" />
-            <span className="text-xs sm:text-sm font-sans tracking-widest text-[#d4d4d4] font-semibold uppercase">
+            <span className="text-xs sm:text-sm font-sans tracking-widest text-[#d4d4d4] font-semibold">
               Legal &amp; Compliance
             </span>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-semibold tracking-tight text-white leading-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-[38px] lg:text-[38px] font-display font-semibold tracking-tight text-white leading-[44px] sm:leading-[44px] md:leading-[44px]">
             Privacy Policy
           </h1>
         </div>
