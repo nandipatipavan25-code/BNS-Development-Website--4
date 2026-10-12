@@ -97,9 +97,9 @@ export default function NewsPage({ setActivePage, setSelectedNews }) {
                 </span>
               </div>
 
-              {/* Display Headline */}
-              <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-[64px] font-display font-semibold tracking-tight leading-[1.08] text-white">
-                News &amp; Press Releases<span className="text-[#ED1C24]">.</span>
+              {/* Display Headline - White 38px Font Size */}
+              <h1 className="text-2xl sm:text-3xl md:text-[38px] font-display font-semibold tracking-tight text-white leading-[44px] sm:leading-[44px] md:leading-[44px]">
+                News &amp; Press Releases.
               </h1>
             </div>
           </ScrollReveal>
