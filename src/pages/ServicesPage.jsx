@@ -210,7 +210,7 @@ function DeliveryLifecycleSection() {
   const deliveryLifecycle = [
     {
       step: '01',
-      title: 'Preconstruction Consultation',
+      title: 'Pre-Development Consultation',
       desc: 'We analyze project goals, site conditions, and budget to define the most effective path forward.',
       image: '/images/process/step-04-details.jpg',
       alt: 'Architectural blueprints and engineering draft specifications',
