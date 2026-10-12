@@ -8,8 +8,6 @@ import {
   ArrowUpRight,
   FileText,
   Building2,
-  Phone,
-  Mail,
   Search,
   Filter,
 } from 'lucide-react';
@@ -238,45 +236,6 @@ export default function NewsPage({ setActivePage, setSelectedNews }) {
             ))}
           </div>
         )}
-      </section>
-
-      {/* ========================================================
-          4. MEDIA INQUIRIES & PRESS CONTACT STRIP
-          ======================================================== */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 sm:mt-20 relative z-10">
-        <ScrollReveal direction="up" delay={0.08}>
-          <div className="rounded-3xl bg-white border border-black/[0.08] p-6 sm:p-10 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
-            <div className="space-y-2 max-w-xl">
-              <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#ED1C24] font-semibold">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#ED1C24]" />
-                <span>Media Relations &amp; Press Kits</span>
-              </div>
-              <h3 className="text-xl sm:text-2xl font-display font-semibold text-black/95 tracking-tight">
-                Journalists &amp; Industry Publications
-              </h3>
-              <p className="text-sm text-black/65 font-sans leading-relaxed">
-                For executive interviews, architectural photography assets, or verified project data sheets, please contact the BNS Development press office directly.
-              </p>
-            </div>
-
-            <div className="flex flex-wrap items-center gap-3 sm:gap-4 shrink-0">
-              <a
-                href="tel:7863683009"
-                className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-[#FAFAF8] hover:bg-black hover:text-white border border-black/[0.08] text-xs sm:text-sm font-sans font-medium text-black/85 transition-colors shadow-xs"
-              >
-                <Phone className="w-3.5 h-3.5 text-[#ED1C24]" />
-                <span>(786) 368-3009</span>
-              </a>
-              <a
-                href="mailto:contact@bns-development.com"
-                className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-[#FAFAF8] hover:bg-black hover:text-white border border-black/[0.08] text-xs sm:text-sm font-sans font-medium text-black/85 transition-colors shadow-xs"
-              >
-                <Mail className="w-3.5 h-3.5 text-[#ED1C24]" />
-                <span>contact@bns-development.com</span>
-              </a>
-            </div>
-          </div>
-        </ScrollReveal>
       </section>
     </div>
   );
