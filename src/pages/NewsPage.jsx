@@ -17,7 +17,6 @@ import {
 import { newsData } from '../data/news';
 import ScrollReveal from '../components/ScrollReveal';
 import CardBeamBorder from '../components/CardBeamBorder';
-import HouseCTA from '../components/HouseCTA';
 
 export default function NewsPage({ setActivePage, setSelectedNews }) {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -387,19 +386,6 @@ export default function NewsPage({ setActivePage, setSelectedNews }) {
           </div>
         </ScrollReveal>
       </section>
-
-      {/* ========================================================
-          5. BOTTOM CTA SECTION
-          ======================================================== */}
-      <HouseCTA
-        setActivePage={setActivePage}
-        eyebrow="Development Partnership"
-        title="Ready to Build What's Next with BNS?"
-        highlight=""
-        description="Whether you have a commercial site in evaluation or a high-rise residential vision ready for design-build execution, our leadership team is ready to collaborate."
-        buttonText="Discuss Your Project"
-        className="mt-6 sm:mt-10"
-      />
     </div>
   );
 }

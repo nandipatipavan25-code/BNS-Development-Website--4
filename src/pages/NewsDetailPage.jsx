@@ -20,7 +20,6 @@ import {
 import { newsData } from '../data/news';
 import ScrollReveal from '../components/ScrollReveal';
 import CardBeamBorder from '../components/CardBeamBorder';
-import HouseCTA from '../components/HouseCTA';
 
 export default function NewsDetailPage({
   newsItem,
@@ -434,19 +433,6 @@ export default function NewsDetailPage({
           </div>
         </section>
       </article>
-
-      {/* ========================================================
-          5. BOTTOM CTA SECTION
-          ======================================================== */}
-      <HouseCTA
-        setActivePage={setActivePage}
-        eyebrow="Connect With BNS"
-        title="Have a Project or Media Inquiry?"
-        highlight=""
-        description="Connect with our corporate communications team or request an exploratory consultation for your next development venture."
-        buttonText="Get in Touch"
-        className="mt-10 sm:mt-16"
-      />
     </div>
   );
 }
