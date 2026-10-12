@@ -172,7 +172,7 @@ export default function Footer({ setActivePage = () => {} }) {
                   desc: 'Austin · Dallas–Fort Worth Metro',
                 },
                 {
-                  title: 'BNS Development Headquarters',
+                  title: 'BNS Development',
                   desc: 'Miami · Brickell · Downtown',
                 },
               ].map((card) => (
