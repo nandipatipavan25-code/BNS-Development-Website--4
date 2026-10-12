@@ -41,14 +41,6 @@ export default function SubcontractorsPage({ setActivePage = () => {} }) {
                 <span className="block text-white mt-1">Powered by Construct.ai.</span>
               </h1>
 
-              {/* Subtext with Text Reveal */}
-              <TextRevealOnScroll
-                text="BNS Development partners with premier specialty trade contractors, engineers, and suppliers across Florida and Texas. We streamline prequalification, compliance, and bid distribution through Construct.ai."
-                className="text-[16px] text-white/80 font-sans leading-relaxed max-w-3xl pt-1"
-                primaryColor="rgba(255, 255, 255, 0.8)"
-                mutedColor="rgba(255, 255, 255, 0.28)"
-                offset={['start 98%', 'start 75%']}
-              />
             </div>
           </ScrollReveal>
         </div>
