@@ -70,8 +70,8 @@ export default function AboutPage({ setActivePage = () => {} }) {
                 </span>
               </div>
 
-              {/* About Us Distinct Headline */}
-              <h1 className="text-2xl sm:text-3xl md:text-[32px] lg:text-[32px] font-display font-semibold tracking-tight text-white leading-[38px] sm:leading-[38px] md:leading-[38px]">
+              {/* About Us Distinct Headline - 38px Banner Typography */}
+              <h1 className="text-2xl sm:text-3xl md:text-[38px] lg:text-[38px] font-display font-semibold tracking-tight text-white leading-[44px] sm:leading-[44px] md:leading-[44px]">
                 <span className="block">Built on Experience.</span>
                 <span className="block text-white mt-1">Built on Relationships.</span>
               </h1>
@@ -106,7 +106,7 @@ export default function AboutPage({ setActivePage = () => {} }) {
                 <span>Practical Foundation</span>
               </div>
 
-              <h2 className="text-xl min-[480px]:text-2xl sm:text-3xl md:text-[32px] lg:text-[32px] font-display font-semibold text-black/95 tracking-tight leading-[1.15] whitespace-nowrap">
+              <h2 className="text-xl min-[480px]:text-2xl sm:text-3xl md:text-[38px] lg:text-[42px] font-display font-semibold text-black/95 tracking-tight leading-[1.15] whitespace-nowrap">
                 The Experience Behind BNS Development
               </h2>
 
@@ -146,7 +146,7 @@ export default function AboutPage({ setActivePage = () => {} }) {
                     <span>Collaborative Excellence</span>
                   </div>
 
-                  <h2 className="text-2xl sm:text-3xl md:text-[32px] lg:text-[32px] font-display font-semibold text-black/95 tracking-tight leading-[38px] sm:leading-[38px] md:leading-[38px]">
+                  <h2 className="text-3xl sm:text-4xl md:text-[42px] lg:text-[42px] font-display font-semibold text-black/95 tracking-tight leading-[44px] sm:leading-[44px] md:leading-[44px]">
                     <span className="block">More Than a Developer.</span>
                     <span className="block mt-1 sm:mt-1.5">A Project Partner.</span>
                   </h2>
@@ -258,7 +258,7 @@ export default function AboutPage({ setActivePage = () => {} }) {
                     <span>Foundational Creed</span>
                   </div>
 
-                  <h2 className="text-2xl sm:text-3xl md:text-[32px] lg:text-[32px] font-display font-semibold text-black/95 tracking-tight leading-[38px] sm:leading-[38px] md:leading-[38px]">
+                  <h2 className="text-3xl sm:text-4xl md:text-[42px] lg:text-[42px] font-display font-semibold text-black/95 tracking-tight leading-[44px] sm:leading-[44px] md:leading-[44px]">
                     Built on Relationships
                   </h2>
 

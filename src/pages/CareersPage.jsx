@@ -197,8 +197,8 @@ export default function CareersPage({ setActivePage, setSelectedJob: setSelected
                 </span>
               </div>
 
-              {/* Display Headline */}
-              <h1 className="text-2xl sm:text-3xl md:text-[32px] lg:text-[32px] font-display font-semibold tracking-tight text-white leading-[38px] sm:leading-[38px] md:leading-[38px]">
+              {/* Display Headline - 38px Banner Typography */}
+              <h1 className="text-2xl sm:text-3xl md:text-[38px] lg:text-[38px] font-display font-semibold tracking-tight text-white leading-[44px] sm:leading-[44px] md:leading-[44px]">
                 <span className="block">Build Your Career With BNS.</span>
                 <span className="block text-white mt-1">Be Part of What's Next.</span>
               </h1>
