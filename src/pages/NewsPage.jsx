@@ -101,11 +101,6 @@ export default function NewsPage({ setActivePage, setSelectedNews }) {
               <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-[64px] font-display font-semibold tracking-tight leading-[1.08] text-white">
                 News &amp; Press Releases<span className="text-[#ED1C24]">.</span>
               </h1>
-
-              {/* Supporting Editorial Subtitle */}
-              <p className="text-base sm:text-lg lg:text-xl text-neutral-300 font-sans leading-relaxed max-w-3xl pt-1">
-                Explore project groundbreakings, regional market expansions, and corporate milestone announcements from the BNS Development leadership team.
-              </p>
             </div>
           </ScrollReveal>
         </div>
