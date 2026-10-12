@@ -676,7 +676,7 @@ export default function HomePage({ setActivePage = () => {}, setSelectedProject 
               <p className="text-base sm:text-lg text-black/70 font-sans leading-relaxed max-w-4xl mx-auto">
                 <span className="sm:block">
                   Our experience spans residential, multifamily, commercial, hospitality, mixed-use, condominiums,
-                </span>
+                </span>{' '}
                 <span className="sm:block">
                   retail, aviation, tenant improvements, land development and ground-up development.
                 </span>
