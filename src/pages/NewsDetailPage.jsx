@@ -147,38 +147,38 @@ export default function NewsDetailPage({
                 </span>
               </div>
 
-              {/* Main Headline */}
-              <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-[52px] font-display font-semibold tracking-tight leading-[1.12] text-white">
+              {/* Main Headline - Reduced from 52px to 32px */}
+              <h1 className="text-xl sm:text-2xl md:text-[32px] lg:text-[32px] font-display font-semibold tracking-tight leading-snug md:leading-[38px] text-white">
                 {article.title}
               </h1>
 
-              {/* Subtitle / Dek */}
+              {/* Subtitle / Dek - Reduced from 20px to 16px */}
               {article.subtitle && (
-                <p className="text-base sm:text-lg md:text-xl text-neutral-300 font-sans leading-relaxed pt-1">
+                <p className="text-sm sm:text-[16px] text-neutral-300 font-sans leading-relaxed pt-1">
                   {article.subtitle}
                 </p>
               )}
 
-              {/* Meta Info Strip */}
-              <div className="pt-2 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs sm:text-sm font-sans text-neutral-300 border-t border-white/15">
+              {/* Meta Info Strip - Reduced from 14px to 11px */}
+              <div className="pt-2 flex flex-wrap items-center gap-x-5 gap-y-2 text-[11px] font-sans text-neutral-300 border-t border-white/15">
                 <div className="flex items-center gap-1.5">
-                  <Calendar className="w-4 h-4 text-[#ED1C24]" />
+                  <Calendar className="w-3.5 h-3.5 text-[#ED1C24]" />
                   <span>{article.date}</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <Clock className="w-4 h-4 text-[#ED1C24]" />
+                  <Clock className="w-3.5 h-3.5 text-[#ED1C24]" />
                   <span>{article.time}</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <MapPin className="w-4 h-4 text-[#ED1C24]" />
+                  <MapPin className="w-3.5 h-3.5 text-[#ED1C24]" />
                   <span>{article.location}</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <User className="w-4 h-4 text-[#ED1C24]" />
+                  <User className="w-3.5 h-3.5 text-[#ED1C24]" />
                   <span>{article.author}</span>
                 </div>
                 <span className="text-neutral-500 hidden sm:inline">·</span>
-                <span className="font-mono text-xs text-neutral-400">{article.readTime}</span>
+                <span className="font-mono text-[11px] text-neutral-400">{article.readTime}</span>
               </div>
             </div>
           </ScrollReveal>
