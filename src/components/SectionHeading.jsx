@@ -16,7 +16,7 @@ export default function SectionHeading({
   badgeStyle = true, // default to pill badge style with red dot + dark text as per site standard
   className = "",
   titleClassName = "",
-  titleSize = "default", // 'default' (32px) | '36px' | 'sm'
+  titleSize = "default", // 'default' (42px) | '36px' | 'sm'
   descriptionClassName = "",
   typingSpeed = 24, // ms per character
 }) {
@@ -97,7 +97,7 @@ export default function SectionHeading({
         className={`relative ${
           titleSize === '36px' || titleSize === 'sm'
             ? 'text-2xl sm:text-3xl md:text-[36px] lg:text-[36px] leading-[40px] sm:leading-[40px] md:leading-[40px]'
-            : 'text-2xl sm:text-3xl md:text-[32px] lg:text-[32px] leading-[38px] sm:leading-[38px] md:leading-[38px]'
+            : 'text-2xl sm:text-3xl md:text-[42px] lg:text-[42px] leading-[44px] sm:leading-[44px] md:leading-[44px]'
         } font-display font-semibold tracking-tight ${
           isDark ? 'text-white' : 'text-black/95'
         } ${centered ? 'text-center' : ''} ${titleClassName}`}

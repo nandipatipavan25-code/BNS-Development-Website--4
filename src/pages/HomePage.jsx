@@ -526,7 +526,7 @@ export default function HomePage({ setActivePage = () => {}, setSelectedProject 
                     </div>
 
                     {/* Display Headline - Solid Black Text (No Red Text) */}
-                    <h2 className="text-2xl sm:text-3xl md:text-[32px] lg:text-[32px] font-display font-semibold text-black/95 tracking-tight leading-[38px] sm:leading-[38px] md:leading-[38px] lg:leading-[38px]">
+                    <h2 className="text-3xl sm:text-4xl md:text-[42px] lg:text-[42px] font-display font-semibold text-black/95 tracking-tight leading-[44px] sm:leading-[44px] md:leading-[44px] lg:leading-[44px]">
                       A Better Way to <br />
                       Move a Project Forward.
                     </h2>
@@ -597,7 +597,7 @@ export default function HomePage({ setActivePage = () => {}, setSelectedProject 
                 <span>Services</span>
               </div>
               
-              <h2 className="text-2xl sm:text-3xl md:text-[32px] lg:text-[32px] font-display font-semibold text-black/95 tracking-tight leading-[38px] sm:leading-[38px] md:leading-[38px]">
+              <h2 className="text-3xl sm:text-4xl md:text-[42px] lg:text-[42px] font-display font-semibold text-black/95 tracking-tight leading-[44px] sm:leading-[44px] md:leading-[44px]">
                 What We Do
               </h2>
             </div>
@@ -631,7 +631,7 @@ export default function HomePage({ setActivePage = () => {}, setSelectedProject 
                 <span>Process &amp; Methodology</span>
               </div>
 
-              <h2 className="text-2xl sm:text-3xl md:text-[32px] lg:text-[32px] font-display font-semibold text-black/95 tracking-tight leading-[38px] sm:leading-[38px] md:leading-[38px]">
+              <h2 className="text-3xl sm:text-4xl md:text-[42px] lg:text-[42px] font-display font-semibold text-black/95 tracking-tight leading-[44px] sm:leading-[44px] md:leading-[44px]">
                 Our Approach
               </h2>
             </div>
@@ -669,7 +669,7 @@ export default function HomePage({ setActivePage = () => {}, setSelectedProject 
                 <span>Portfolio &amp; Sectors</span>
               </div>
 
-              <h2 className="text-2xl sm:text-3xl md:text-[32px] lg:text-[32px] font-display font-semibold text-black/95 tracking-tight leading-[38px] sm:leading-[38px] md:leading-[38px]">
+              <h2 className="text-3xl sm:text-4xl md:text-[42px] lg:text-[42px] font-display font-semibold text-black/95 tracking-tight leading-[44px] sm:leading-[44px] md:leading-[44px]">
                 Experience Across Projects
               </h2>
 

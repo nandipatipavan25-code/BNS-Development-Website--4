@@ -319,7 +319,7 @@ export default function BeyondExperienceSection() {
             <span>Sector Versatility</span>
           </div>
 
-          <h2 className="text-2xl sm:text-3xl md:text-[32px] lg:text-[32px] xl:text-[32px] font-display font-semibold text-[#1A1A1A] tracking-tight leading-[1.2] sm:leading-[1.18] md:leading-[38px] lg:whitespace-nowrap">
+          <h2 className="text-2xl sm:text-3xl md:text-[36px] lg:text-[40px] xl:text-[42px] font-display font-semibold text-[#1A1A1A] tracking-tight leading-[1.2] sm:leading-[1.18] md:leading-[50px] lg:whitespace-nowrap">
             Experience That Goes Beyond One Type of Project
           </h2>
 

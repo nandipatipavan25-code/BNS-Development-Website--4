@@ -78,16 +78,16 @@ export default function NewsDetailPage({
       {/* ========================================================
           1. HERO BANNER: Full-Bleed Article Header
           ======================================================== */}
-      <section className="relative w-full overflow-hidden min-h-[460px] sm:min-h-[520px] lg:min-h-[580px] flex flex-col justify-end pt-32 sm:pt-40 pb-12 sm:pb-16 bg-[#141518] mb-8 sm:mb-12">
+      <section className="relative w-full overflow-hidden min-h-[420px] flex flex-col justify-end pt-28 sm:pt-32 pb-10 sm:pb-12 bg-[#141518] mb-8 sm:mb-12">
         <img
           src={article.image}
           alt={article.title}
-          className="absolute inset-0 w-full h-full object-cover select-none scale-105 brightness-[0.38] contrast-[1.12]"
+          className="absolute inset-0 w-full h-full object-cover select-none brightness-95"
           loading="eager"
         />
         {/* Dual Directional Architectural Gradients for Flawless Contrast */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0E0F12] via-[#0E0F12]/75 to-black/35 pointer-events-none" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0E0F12]/90 via-[#0E0F12]/60 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/35 to-black/10 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/30 to-transparent pointer-events-none" />
         <div
           className="absolute inset-0 opacity-[0.03] pointer-events-none"
           style={{

@@ -51,7 +51,7 @@ export default function WorkPage({ setSelectedProject, setActivePage }) {
       {/* ========================================================
           1. HERO: Full-Bleed Architectural Portfolio Banner
           ======================================================== */}
-      <section className="relative w-full overflow-hidden min-h-[480px] sm:min-h-[540px] lg:min-h-[580px] flex flex-col justify-end pt-32 sm:pt-40 pb-16 sm:pb-20 bg-[#181818] mb-8 sm:mb-10">
+      <section className="relative w-full overflow-hidden min-h-[420px] flex flex-col justify-end pt-28 sm:pt-32 pb-12 sm:pb-14 bg-[#181818] mb-8 sm:mb-10">
         <img
           src="/images/projects/district-36-cover.png"
           alt="BNS Landmark Portfolio Projects"
@@ -59,8 +59,8 @@ export default function WorkPage({ setSelectedProject, setActivePage }) {
           loading="eager"
         />
         {/* Soft, balanced architectural overlay for text readability while revealing full building image */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-black/10 pointer-events-none" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/30 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/35 to-black/10 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/30 to-transparent pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <ScrollReveal direction="up" delay={0.05}>

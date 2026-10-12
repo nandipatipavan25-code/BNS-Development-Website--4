@@ -111,7 +111,7 @@ export default function WorkDetailPage({
                 </span>
               </div>
 
-              <h1 className="text-2xl sm:text-3xl md:text-[32px] lg:text-[32px] font-display font-semibold text-black/95 tracking-tight leading-[38px] sm:leading-[38px] md:leading-[38px]">
+              <h1 className="text-3xl sm:text-4xl md:text-[42px] lg:text-[42px] font-display font-semibold text-black/95 tracking-tight leading-[44px] sm:leading-[44px] md:leading-[44px]">
                 {activeProj.title}
               </h1>
 

@@ -140,7 +140,7 @@ export default function GroundUpPage({ setActivePage }) {
       {/* ========================================================
           1. HERO HEADER: Full-Bleed Architectural Banner
           ======================================================== */}
-      <section className="relative w-full overflow-hidden min-h-[460px] sm:min-h-[520px] lg:min-h-[560px] flex flex-col justify-end pt-32 sm:pt-40 pb-16 sm:pb-20 bg-[#181818] mb-8 sm:mb-10 lg:mb-12">
+      <section className="relative w-full overflow-hidden min-h-[420px] flex flex-col justify-end pt-28 sm:pt-32 pb-12 sm:pb-14 bg-[#181818] mb-8 sm:mb-10 lg:mb-12">
         <img
           src="/images/ground-up-hero-magnific.jpg"
           alt="Ground-Up Construction Development"
@@ -148,8 +148,8 @@ export default function GroundUpPage({ setActivePage }) {
           loading="eager"
         />
         {/* Dual Directional Architectural Gradients */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/45 to-black/20 pointer-events-none" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/40 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/35 to-black/10 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/30 to-transparent pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <ScrollReveal direction="up" delay={0.05}>
@@ -177,8 +177,8 @@ export default function GroundUpPage({ setActivePage }) {
                 </span>
               </nav>
 
-              {/* Main Headline - White 32px */}
-              <h1 className="text-2xl sm:text-3xl md:text-[32px] font-display font-semibold tracking-tight text-white leading-[38px] sm:leading-[38px] md:leading-[38px]">
+              {/* Main Headline - White 38px */}
+              <h1 className="text-2xl sm:text-3xl md:text-[38px] font-display font-semibold tracking-tight text-white leading-[44px] sm:leading-[44px] md:leading-[44px]">
                 <span className="block">From Foundation.</span>
                 <span className="block mt-1 text-white">To Superstructure.</span>
               </h1>
