@@ -203,7 +203,7 @@ export default function FocusLensNavbar({ activePage = 'home', setActivePage = (
 
   const isServiceSubActive = ['preconstruction', 'design-build', 'residential', 'tenant-improvements', 'ground-up', 'services'].includes(activePage);
 
-  const isLightPage = activePage === 'contact' || activePage === 'career-detail' || activePage === 'work-detail';
+  const isLightPage = activePage === 'career-detail' || activePage === 'work-detail';
   const isLightHeader = isScrolled || isLightPage;
 
   const handleDropdownMouseEnter = () => {
