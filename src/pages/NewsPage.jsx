@@ -87,7 +87,7 @@ export default function NewsPage({ setActivePage, setSelectedNews }) {
               {/* Eyebrow Pill */}
               <div className="flex items-center gap-2.5">
                 <span className="w-6 h-[2px] bg-[#ED1C24]" />
-                <span className="text-xs sm:text-sm font-mono tracking-widest text-neutral-300 uppercase font-semibold">
+                <span className="text-xs sm:text-sm font-sans tracking-widest text-neutral-300 font-semibold">
                   Media &amp; Corporate Communications
                 </span>
               </div>
