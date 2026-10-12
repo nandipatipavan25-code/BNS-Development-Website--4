@@ -96,7 +96,6 @@ const EXECUTION_STANDARDS = [
 function ScrollServiceCard({ service, index, onSelect }) {
   const cardRef = useRef(null);
   const isDark = service.theme === 'dark';
-  const IconComp = service.icon;
 
   return (
     <div
@@ -123,27 +122,19 @@ function ScrollServiceCard({ service, index, onSelect }) {
           
           {/* Left Column: Number, Title, Description, CTA */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="flex items-center gap-3">
-              <span className="font-mono text-xs sm:text-sm font-semibold tracking-wider text-[#ED1C24] uppercase">
+            <div className="flex items-baseline gap-3 sm:gap-4">
+              <span className="font-mono text-xs sm:text-sm font-semibold tracking-wider text-[#ED1C24] uppercase shrink-0">
                 {service.num}
               </span>
-              <span className={`w-1 h-1 rounded-full ${isDark ? 'bg-white/30' : 'bg-black/20'}`} />
-              <div className="flex items-center gap-2">
-                <IconComp className="w-4 h-4 text-[#ED1C24]" />
-                <span className={`text-xs font-mono uppercase tracking-wider font-medium ${isDark ? 'text-white/60' : 'text-black/50'}`}>
-                  Service Division
-                </span>
-              </div>
+              <h3
+                onClick={() => onSelect && onSelect(service.targetPage)}
+                className={`text-2xl sm:text-3xl lg:text-[34px] font-display font-semibold tracking-tight leading-snug cursor-pointer transition-colors min-w-0 flex-1 ${
+                  isDark ? 'text-white hover:text-white/85' : 'text-black/95 hover:text-[#ED1C24]'
+                }`}
+              >
+                {service.title}
+              </h3>
             </div>
-
-            <h3
-              onClick={() => onSelect && onSelect(service.targetPage)}
-              className={`text-2xl sm:text-3xl lg:text-[34px] font-display font-semibold tracking-tight leading-snug cursor-pointer transition-colors ${
-                isDark ? 'text-white hover:text-white/85' : 'text-black/95 hover:text-[#ED1C24]'
-              }`}
-            >
-              {service.title}
-            </h3>
 
             <p className={`text-base sm:text-[18px] font-sans leading-relaxed ${
               isDark ? 'text-white/75' : 'text-black/70'
