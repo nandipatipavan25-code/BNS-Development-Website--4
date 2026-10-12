@@ -12,6 +12,7 @@ export default function Footer({ setActivePage = () => {} }) {
     { id: 'services', label: 'Services' },
     { id: 'work', label: 'Work' },
     { id: 'careers', label: 'Careers' },
+    { id: 'news', label: 'News & Press Releases' },
     { id: 'subcontractors', label: 'Subcontractors' },
     { id: 'contact', label: 'Contact Us' },
   ];

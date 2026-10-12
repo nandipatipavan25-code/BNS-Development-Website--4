@@ -22,10 +22,13 @@ import TenantImprovementsPage from './pages/TenantImprovementsPage';
 import GroundUpPage from './pages/GroundUpPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsConditionsPage from './pages/TermsConditionsPage';
+import NewsPage from './pages/NewsPage';
+import NewsDetailPage from './pages/NewsDetailPage';
 
 export default function App() {
   const [selectedJob, setSelectedJob] = useState(null);
   const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedNews, setSelectedNews] = useState(null);
   const lenisRef = useRef(null);
 
   // Ultra-Smooth Momentum Scrolling Engine (Lenis)
@@ -70,7 +73,7 @@ export default function App() {
   const [activePage, setActivePage] = useState(() => {
     if (typeof window !== 'undefined' && window.location.hash) {
       const h = window.location.hash.replace('#', '').split('?')[0];
-      if (['home', 'about', 'services', 'work', 'work-detail', 'careers', 'career-detail', 'subcontractors', 'contact', 'preconstruction', 'design-build', 'residential', 'tenant-improvements', 'ground-up', 'privacy-policy', 'terms-conditions'].includes(h)) {
+      if (['home', 'about', 'services', 'work', 'work-detail', 'careers', 'career-detail', 'news', 'news-detail', 'subcontractors', 'contact', 'preconstruction', 'design-build', 'residential', 'tenant-improvements', 'ground-up', 'privacy-policy', 'terms-conditions'].includes(h)) {
         return h;
       }
     }
@@ -103,7 +106,7 @@ export default function App() {
     const handleHash = () => {
       const fullHash = window.location.hash.replace('#', '');
       const hash = fullHash.split('?')[0];
-      if (hash && ['home', 'about', 'services', 'work', 'work-detail', 'careers', 'career-detail', 'subcontractors', 'contact', 'preconstruction', 'design-build', 'residential', 'tenant-improvements', 'ground-up', 'privacy-policy', 'terms-conditions'].includes(hash)) {
+      if (hash && ['home', 'about', 'services', 'work', 'work-detail', 'careers', 'career-detail', 'news', 'news-detail', 'subcontractors', 'contact', 'preconstruction', 'design-build', 'residential', 'tenant-improvements', 'ground-up', 'privacy-policy', 'terms-conditions'].includes(hash)) {
         setActivePage(hash);
       }
     };
@@ -150,6 +153,12 @@ export default function App() {
     }
     if (activePage === 'career-detail') {
       return <CareerDetailPage job={selectedJob} setActivePage={handlePageChange} setSelectedJob={setSelectedJob} />;
+    }
+    if (activePage === 'news') {
+      return <NewsPage setActivePage={handlePageChange} setSelectedNews={setSelectedNews} />;
+    }
+    if (activePage === 'news-detail') {
+      return <NewsDetailPage newsItem={selectedNews} setActivePage={handlePageChange} setSelectedNews={setSelectedNews} />;
     }
     if (activePage === 'subcontractors') {
       return <SubcontractorsPage setActivePage={handlePageChange} />;

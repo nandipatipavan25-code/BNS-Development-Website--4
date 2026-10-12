@@ -188,6 +188,7 @@ export default function FocusLensNavbar({ activePage = 'home', setActivePage = (
     { id: 'services', label: 'Services' },
     { id: 'work', label: 'Work' },
     { id: 'careers', label: 'Careers' },
+    { id: 'news', label: 'News & Press' },
     { id: 'subcontractors', label: 'Subcontractors' },
     { id: 'contact', label: 'Contact Us' },
   ];
@@ -203,7 +204,7 @@ export default function FocusLensNavbar({ activePage = 'home', setActivePage = (
 
   const isServiceSubActive = ['preconstruction', 'design-build', 'residential', 'tenant-improvements', 'ground-up', 'services'].includes(activePage);
 
-  const isLightPage = activePage === 'career-detail' || activePage === 'work-detail';
+  const isLightPage = activePage === 'contact' || activePage === 'career-detail' || activePage === 'work-detail';
   const isLightHeader = isScrolled || isLightPage;
 
   const handleDropdownMouseEnter = () => {
