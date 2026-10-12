@@ -371,7 +371,7 @@ export default function NewsDetailPage({
                 <span>Continued Coverage</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-display font-semibold text-black/95 tracking-tight pt-1">
-                More Press Releases
+                {relatedNews.length === 1 ? 'Related Press Release' : 'More Press Releases'}
               </h3>
             </div>
 
@@ -388,7 +388,7 @@ export default function NewsDetailPage({
             </button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          <div className={relatedNews.length === 1 ? 'max-w-xl' : 'grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8'}>
             {relatedNews.map((item) => (
               <div
                 key={item.id}
