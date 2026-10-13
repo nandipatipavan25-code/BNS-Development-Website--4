@@ -4,7 +4,7 @@ export const newsData = [
     slug: 'bns-expands-central-texas-development-corridor',
     title: 'BNS Development Expands Central Texas Operations with Dedicated Regional Hub in Austin',
     subtitle: 'Strategic Growth Initiative Backs Surging Demand for Ground-Up Commercial, Industrial, and Multifamily Developments',
-    category: 'News',
+    category: 'Strategic Expansion',
     tag: 'Corporate Growth',
     date: 'September 28, 2026',
     time: '11:00 AM CST',
@@ -64,7 +64,7 @@ export const newsData = [
     slug: 'bns-completes-flagship-marriott-luxury-residences',
     title: 'BNS Development Delivers Flagship Marriott Luxury Residences Ahead of Schedule',
     subtitle: 'A Masterclass in High-End Hospitality Execution Featuring 48 Ultra-Luxury Units and Resort-Style Amenities',
-    category: 'Media',
+    category: 'Press Release',
     tag: 'Turnkey Delivery',
     date: 'August 18, 2026',
     time: '02:15 PM EST',
@@ -116,65 +116,6 @@ export const newsData = [
       email: 'contact@bns-development.com',
       phone: '(786) 368-3009',
       location: 'South Florida Studio · Miami, Fort Lauderdale, Palm Beach',
-    },
-  },
-  {
-    id: 'bns-podcast-the-builders-blueprint-ep1',
-    slug: 'bns-podcast-the-builders-blueprint-ep1',
-    title: 'The Builder’s Blueprint: Navigating High-Stakes Commercial & Luxury Construction',
-    subtitle: 'Executive Leadership on Speed-to-Market, Integrated Design-Build, and Regional Expansion in Florida & Texas',
-    category: 'Podcast',
-    tag: 'Executive Podcast',
-    date: 'October 10, 2026',
-    time: '34 min listen',
-    location: 'BNS Media Studio · Miami & Austin',
-    author: 'BNS Executive Series',
-    readTime: '34 min listen',
-    summary: 'Join BNS Development leadership as they explore commercial general contracting, early preconstruction risk mitigation, and the operational precision required to deliver landmark developments ahead of schedule.',
-    image: '/images/ground-up.jpg',
-    secondaryImage: '/images/projects/executive-office-workspace.png',
-    tertiaryImage: '/images/approach/groundup-cap-03-mixeduse.jpg',
-    metrics: [
-      { label: 'Format', value: 'Audio & Discussion' },
-      { label: 'Episode', value: 'Episode 01' },
-      { label: 'Topic', value: 'Design-Build Delivery' },
-      { label: 'Runtime', value: '34 Minutes' },
-    ],
-    contentSections: [
-      {
-        heading: 'Deconstructing Turnkey Project Velocity',
-        paragraphs: [
-          'In this inaugural episode of The Builder’s Blueprint, BNS Development executive leadership sits down to break down the mechanics of modern general contracting in today’s hyper-competitive commercial and luxury residential markets.',
-          'From managing volatile supply chain lead times to pioneering synchronized BIM trade coordination, the conversation highlights how integrated design-build workflows protect owner capital and compress development schedules.',
-        ],
-      },
-      {
-        heading: 'Strategic Expansion Across Key Southern Corridors',
-        paragraphs: [
-          'The leadership panel dives into the strategic decision-making behind BNS Development’s expanding footprint across Central Texas and South Florida, discussing regional labor dynamics, specialty subcontractor partnerships, and municipal entitlement agility.',
-          'Key takeaways include the importance of early pre-development feasibility modeling and maintaining transparent, real-time client communication from site acquisition through final commissioning.',
-        ],
-      },
-      {
-        quote: {
-          text: 'Construction excellence isn’t just about putting steel in the ground—it’s about eliminating friction before shovels hit the dirt. That’s what The Builder’s Blueprint is all about.',
-          author: 'Managing Director',
-          role: 'BNS Development Media Series',
-        },
-      },
-      {
-        heading: 'Episode Highlights & Where to Listen',
-        paragraphs: [
-          'Listen to the full executive conversation on Spotify, Apple Podcasts, or stream directly through the BNS Media Hub. Stay tuned for upcoming episodes featuring guest developers, structural engineers, and civic leaders.',
-        ],
-      },
-    ],
-    pressContact: {
-      name: 'BNS Media Relations',
-      title: 'Corporate Communications Desk',
-      email: 'contact@bns-development.com',
-      phone: '(786) 368-3009',
-      location: 'Miami Headquarters · 1000 Brickell Avenue, Miami, FL',
     },
   },
 ];

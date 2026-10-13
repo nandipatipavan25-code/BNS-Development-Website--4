@@ -320,7 +320,7 @@ export default function NewsDetailPage({
                 <span>Continued Coverage</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-display font-semibold text-black/95 tracking-tight pt-1">
-                {relatedNews.length === 1 ? 'Related Coverage' : 'More Stories & Releases'}
+                {relatedNews.length === 1 ? 'Related Press Release' : 'More Press Releases'}
               </h3>
             </div>
 
@@ -332,7 +332,7 @@ export default function NewsDetailPage({
               }}
               className="hidden sm:inline-flex items-center gap-2 text-xs sm:text-sm font-sans font-semibold text-[#ED1C24] hover:underline cursor-pointer"
             >
-              <span>View All</span>
+              <span>View All Releases</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
