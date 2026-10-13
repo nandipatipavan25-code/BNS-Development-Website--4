@@ -20,13 +20,16 @@ export default function NewsPage({ setActivePage, setSelectedNews }) {
   const [searchQuery, setSearchQuery] = useState('');
 
   const categories = [
-    { id: 'all', label: 'All Releases', count: newsData.length },
-    { id: 'Strategic Expansion', label: 'Strategic Expansion', count: newsData.filter((i) => i.category === 'Strategic Expansion').length },
-    { id: 'Press Release', label: 'Press Releases', count: newsData.filter((i) => i.category === 'Press Release').length },
+    { id: 'all', label: 'All', count: newsData.length },
+    { id: 'News', label: 'News', count: newsData.filter((i) => i.category === 'News').length },
+    { id: 'Media', label: 'Media', count: newsData.filter((i) => i.category === 'Media').length },
+    { id: 'Podcast', label: 'Podcast', count: newsData.filter((i) => i.category === 'Podcast').length },
   ];
 
   const filteredNews = newsData.filter((item) => {
-    const matchesCategory = activeCategory === 'all' || item.category === activeCategory;
+    const matchesCategory =
+      activeCategory === 'all' ||
+      item.category.toLowerCase() === activeCategory.toLowerCase();
     const matchesSearch =
       searchQuery.trim() === '' ||
       item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -152,7 +155,7 @@ export default function NewsPage({ setActivePage, setSelectedNews }) {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16 relative z-10">
         {filteredNews.length === 0 ? (
           <div className="text-center py-20 bg-white rounded-3xl border border-black/[0.08] p-8 space-y-3">
-            <p className="text-base font-sans text-black/60">No press releases found matching your search.</p>
+            <p className="text-base font-sans text-black/60">No stories found matching your filter.</p>
             <button
               type="button"
               onClick={() => {
@@ -165,7 +168,7 @@ export default function NewsPage({ setActivePage, setSelectedNews }) {
             </button>
           </div>
         ) : (
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-8">
             {filteredNews.map((item, index) => (
               <ScrollReveal key={item.id} direction="up" delay={0.06 + index * 0.08} className="h-full">
                 <div
@@ -224,7 +227,7 @@ export default function NewsPage({ setActivePage, setSelectedNews }) {
                   {/* Footer Read More Interaction */}
                   <div className="px-6 sm:px-8 pb-6 sm:pb-8 pt-2 flex items-center justify-between border-t border-black/[0.06]">
                     <span className="inline-flex items-center gap-2 text-xs sm:text-sm font-sans font-semibold text-[#ED1C24] group-hover:translate-x-1 transition-transform duration-300">
-                      <span>Read Full Press Release</span>
+                      <span>{item.category === 'Podcast' ? 'Listen to Episode' : 'Read Full Story'}</span>
                       <ArrowRight className="w-4 h-4" />
                     </span>
                     <div className="w-8 h-8 rounded-full bg-[#FAFAF8] group-hover:bg-[#ED1C24] text-black/70 group-hover:text-white border border-black/[0.08] group-hover:border-[#ED1C24] flex items-center justify-center transition-all duration-300">
