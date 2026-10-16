@@ -251,7 +251,7 @@ export default function FocusLensNavbar({ activePage = 'home', setActivePage = (
                     e.currentTarget.src = '/logos/BNS LOGO-01.svg';
                   }}
                   className={`transition-all duration-300 w-auto object-contain ${
-                    isScrolled ? 'h-7 sm:h-8' : 'h-8 sm:h-9'
+                    isScrolled ? 'h-8 sm:h-9' : 'h-9 sm:h-10'
                   }`}
                 />
               </div>
@@ -481,7 +481,7 @@ export default function FocusLensNavbar({ activePage = 'home', setActivePage = (
                     e.currentTarget.onerror = null;
                     e.currentTarget.src = '/logos/logo-01.svg';
                   }}
-                  className="h-8 w-auto object-contain"
+                  className="h-9 w-auto object-contain"
                 />
                 <button
                   type="button"
