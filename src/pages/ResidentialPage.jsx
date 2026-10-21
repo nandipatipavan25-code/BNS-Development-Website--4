@@ -27,7 +27,7 @@ export default function ResidentialPage({ setActivePage }) {
     {
       step: '02',
       title: 'Integrated Pre-Development',
-      desc: 'We synchronize architectural drafting, structural engineering, specialty trade procurement, and municipal permitting before ground-breaking.',
+      desc: 'We synchronize architectural drafting, structural engineering, specialty trade procurement, and municipal permitting before groundbreaking.',
       icon: ClipboardList,
       image: '/images/approach/residential-02-predev.jpg',
       phase: 'Phase 02',

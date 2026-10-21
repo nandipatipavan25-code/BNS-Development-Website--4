@@ -26,7 +26,7 @@ const SCROLL_SERVICES = [
     num: '02',
     id: 'development-services',
     title: 'Development Services',
-    description: 'Experienced project oversight focused on coordination, communication, quality and keeping development moving.',
+    description: 'Experienced project oversight focused on coordination, communication, quality and momentum.',
     ctaText: 'Explore Our Development Services',
     icon: HardHat,
     image: '/images/services/service-02-development-services.png',
@@ -425,17 +425,17 @@ export default function HomePage({ setActivePage = () => {}, setSelectedProject 
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none" aria-hidden="true">
           <video
             ref={heroVideoRef}
-            src="/videos/hero-bg-video.webm"
+            src="/videos/bns-services-hero.mp4"
             autoPlay
             loop
             muted
             playsInline
             preload="auto"
-            className="w-full h-full object-cover select-none pointer-events-none brightness-[0.70] contrast-[1.05]"
+            className="w-full h-full object-cover select-none pointer-events-none brightness-[0.88] contrast-[1.02]"
           />
-          {/* Layered cinematic overlay to guarantee high-contrast text and CTA readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/65 to-black/35 pointer-events-none" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#111215] via-transparent to-black/50 pointer-events-none" />
+          {/* Lightened cinematic overlay to keep text crisp while making the video much more vivid */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/35 to-black/10 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#111215]/70 via-transparent to-black/20 pointer-events-none" />
           {/* Subtle grid background texture */}
           <div
             className="absolute inset-0 opacity-[0.03] pointer-events-none"
@@ -473,7 +473,7 @@ export default function HomePage({ setActivePage = () => {}, setSelectedProject 
               className="space-y-3.5 text-[16px] text-white/80 font-sans leading-relaxed max-w-xl"
             >
               <p className="text-white/80">
-                BNS Development provides development services with experienced leadership from planning through completion. From residential and multifamily projects to commercial and ground-up developments, we bring practical expertise, clear communication and accountability to every project.
+                BNS Development leads projects with experienced leadership from planning through completion. From residential and multifamily projects to commercial and ground-up developments, we bring practical expertise, clear communication and accountability to every project.
               </p>
             </motion.div>
 
@@ -675,10 +675,10 @@ export default function HomePage({ setActivePage = () => {}, setSelectedProject 
 
               <p className="text-base sm:text-lg text-black/70 font-sans leading-relaxed max-w-4xl mx-auto">
                 <span className="sm:block">
-                  Our experience spans residential, multifamily, commercial, hospitality, mixed-use, condominiums,
+                  Our experience spans residential, multifamily, commercial, hospitality, mixed-use, condominium,
                 </span>{' '}
                 <span className="sm:block">
-                  retail, aviation, tenant improvements, land development and ground-up development.
+                  retail and aviation projects, plus tenant improvements, land development and ground-up construction.
                 </span>
               </p>
             </div>

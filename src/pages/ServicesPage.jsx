@@ -27,7 +27,7 @@ const SCROLL_SERVICES = [
     num: '02',
     id: 'development-services',
     title: 'Development Services',
-    description: 'Experienced project oversight focused on coordination, communication, quality and keeping development moving.',
+    description: 'Experienced project oversight focused on coordination, communication, quality and momentum.',
     ctaText: 'Explore Our Development Services',
     icon: HardHat,
     image: '/images/services/service-02-development-services.png',
@@ -470,11 +470,6 @@ export default function ServicesPage({ setActivePage }) {
                       <p className="text-sm sm:text-[15px] text-black/65 font-sans leading-relaxed">
                         {item.desc}
                       </p>
-                    </div>
-
-                    <div className="pt-5 border-t border-black/[0.08] flex items-center justify-between text-xs font-mono">
-                      <span className="text-black/50 uppercase tracking-wider">BNS Standard</span>
-                      <span className="text-[#ED1C24] font-semibold tracking-wider">Excellence in Delivery</span>
                     </div>
                   </div>
                 </ScrollReveal>

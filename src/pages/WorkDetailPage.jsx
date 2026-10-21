@@ -42,6 +42,13 @@ export default function WorkDetailPage({
   const activeProj = getActiveProject();
   const [lightboxIndex, setLightboxIndex] = useState(null);
 
+  // Dynamically update browser tab/page title to project name
+  useEffect(() => {
+    if (activeProj?.title) {
+      document.title = `${activeProj.title} | BNS Development`;
+    }
+  }, [activeProj?.title]);
+
   const galleryImages =
     activeProj.gallery && activeProj.gallery.length > 0
       ? activeProj.gallery
@@ -93,11 +100,6 @@ export default function WorkDetailPage({
               <ArrowLeft className="w-4 h-4 text-[#ED1C24] transition-transform group-hover:-translate-x-1" />
               <span>Back to Portfolio</span>
             </button>
-
-            <div className="hidden sm:flex items-center gap-2 text-xs font-mono text-black/40">
-              <span className="w-2 h-2 rounded-full bg-[#ED1C24]" />
-              <span>PROJECT ID: {activeProj.id.toUpperCase()}</span>
-            </div>
           </div>
 
           <ScrollReveal direction="up" delay={0.05}>

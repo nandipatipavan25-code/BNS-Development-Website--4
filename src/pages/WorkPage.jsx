@@ -12,7 +12,7 @@ export default function WorkPage({ setSelectedProject, setActivePage }) {
   const [statusFilter, setStatusFilter] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Authentic client work projects catalogue
+  // Authentic client work projects catalog
   const allProjects = workProjectsData;
 
   const statusOptions = ['All', 'Completed Projects', 'Active Projects', 'Upcoming Projects'];
@@ -92,7 +92,7 @@ export default function WorkPage({ setSelectedProject, setActivePage }) {
           <SectionHeading
             tag="Portfolio Archive"
             title="Experience Across Projects"
-            description="Explore our completed, active, and upcoming developments across Florida and Central Texas."
+            description="Explore our completed landmark developments across Florida."
             descriptionClassName="max-w-none sm:whitespace-nowrap"
           />
         </ScrollReveal>
@@ -230,18 +230,8 @@ export default function WorkPage({ setSelectedProject, setActivePage }) {
             </div>
             <h3 className="text-base font-semibold font-display text-black/85">No Projects Found</h3>
             <p className="text-xs text-black/50 font-sans max-w-sm mx-auto">
-              Try adjusting your search terms or filter criteria to explore our catalogue.
+              Try adjusting your search terms or filter criteria to explore our catalog.
             </p>
-            <button
-              type="button"
-              onClick={() => {
-                setStatusFilter('All');
-                setSearchQuery('');
-              }}
-              className="mt-2 px-5 py-2 rounded-full bg-[#181818] text-white text-xs font-sans font-medium hover:bg-black transition-colors cursor-pointer"
-            >
-              Reset Filters
-            </button>
           </div>
         )}
 
