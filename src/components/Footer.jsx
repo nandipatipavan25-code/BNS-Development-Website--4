@@ -77,7 +77,7 @@ export default function Footer({ setActivePage = () => {} }) {
               />
             </div>
             <p className="text-sm sm:text-base text-neutral-400 font-sans leading-relaxed">
-              Experienced leadership from planning through completion. Delivering thoughtful development solutions backed by collaboration and accountability.
+              Development leadership, from first plan to final handover.
             </p>
           </div>
 
