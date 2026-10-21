@@ -21,6 +21,7 @@ export const teamData = [
   {
     id: "aravind-vangala",
     name: "Aravind Vangala",
+    hidden: true, // Hidden for now per client request
     role: "Co-Founder",
     title: "Co-Founder",
     experience: "Technology, Engineering & Real Estate Investment",
@@ -75,4 +76,4 @@ export const teamData = [
     ],
     sectors: ["Client Experience", "Project Onboarding", "Stakeholder Communication"]
   }
-];
+].filter((member) => !member.hidden);

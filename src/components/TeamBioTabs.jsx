@@ -17,8 +17,8 @@ export default function TeamBioTabs({ onContactClick }) {
 
   return (
     <div className="w-full">
-      {/* 4 Flip Cards Grid (Hover-to-flip & Click-to-flip) */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+      {/* Dynamic Flip Cards Grid (Adapts cleanly to 3 or 4 team members) */}
+      <div className={`grid grid-cols-1 sm:grid-cols-2 ${teamData.length === 3 ? 'lg:grid-cols-3 max-w-5xl mx-auto' : 'lg:grid-cols-4'} gap-6 sm:gap-8`}>
         {teamData.map((person, idx) => {
           const isFlipped = !!flippedCards[person.id];
 
