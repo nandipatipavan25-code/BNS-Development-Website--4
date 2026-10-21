@@ -339,8 +339,8 @@ function ScrollServiceCard({ service, index }) {
 // SUB-COMPONENT: TYPEWRITER HEADLINE (Two Lines)
 // =========================================================================
 function TypewriterHeadline({
-  line1 = "Built on Experience.",
-  line2 = "Driven by Partnership.",
+  line1 = "Built in Trust.",
+  line2 = "Driven by Experience.",
   className,
   style,
 }) {
@@ -417,7 +417,7 @@ export default function HomePage({ setActivePage = () => {}, setSelectedProject 
 
       {/* ===================================================================
           1. HERO SECTION
-          ## Built on Experience. Driven by Partnership.
+          ## Built in Trust. Driven by Experience.
           CTA: Let’s Develop What’s Next →
           =================================================================== */}
       <section className="relative z-20 w-full min-h-[580px] sm:min-h-[660px] lg:min-h-[720px] flex items-center bg-[#111215] text-white pt-28 sm:pt-36 lg:pt-40 pb-14 sm:pb-20 lg:pb-24 overflow-hidden">
@@ -461,8 +461,8 @@ export default function HomePage({ setActivePage = () => {}, setSelectedProject 
             </motion.div>
 
             <TypewriterHeadline
-              line1="Built on Experience."
-              line2="Driven by Partnership."
+              line1="Built in Trust."
+              line2="Driven by Experience."
               className="text-3xl sm:text-4xl md:text-[46px] lg:text-[48px] font-display font-semibold text-white/95 tracking-tight leading-[1.18] sm:leading-[1.18] md:leading-[54px] min-h-[96px] sm:min-h-[110px] md:min-h-[124px]"
             />
 
