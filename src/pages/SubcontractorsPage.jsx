@@ -38,7 +38,7 @@ export default function SubcontractorsPage({ setActivePage = () => {} }) {
               {/* Main Headline - 38px Banner Typography */}
               <h1 className="text-2xl sm:text-3xl md:text-[38px] lg:text-[38px] font-display font-semibold tracking-tight text-white leading-[44px] sm:leading-[44px] md:leading-[44px]">
                 <span className="block">Trade Partner Onboarding.</span>
-                <span className="block text-white mt-1">Powered by Construct.ai.</span>
+                <span className="block text-white mt-1">Powered by Construkt.ai.</span>
               </h1>
 
             </div>
@@ -47,7 +47,7 @@ export default function SubcontractorsPage({ setActivePage = () => {} }) {
       </section>
 
       {/* ========================================================
-          2. CONSTRUCT.AI REGISTRATION PORTAL (Centered Action Card)
+          2. CONSTRUKT.AI REGISTRATION PORTAL (Centered Action Card)
           ======================================================== */}
       <div className="w-full relative">
         {/* Dot pattern background */}
@@ -79,7 +79,7 @@ export default function SubcontractorsPage({ setActivePage = () => {} }) {
                     Join the BNS Trade Network
                   </h2>
                   <TextRevealOnScroll
-                    text="Click below to start or complete your contractor onboarding on Construct.ai."
+                    text="Click below to start or complete your contractor onboarding on Construkt.ai."
                     className="text-sm sm:text-base text-black/65 font-sans leading-relaxed max-w-md mx-auto text-center"
                     primaryColor="rgba(0, 0, 0, 0.85)"
                     mutedColor="rgba(0, 0, 0, 0.20)"
@@ -90,7 +90,7 @@ export default function SubcontractorsPage({ setActivePage = () => {} }) {
                 {/* Prominent CTA Button */}
                 <div className="pt-2 max-w-md mx-auto">
                   <a
-                    href="https://construct.ai"
+                    href="https://construkt.ai/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="home-outline-btn group/btn inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full text-xs sm:text-sm font-sans font-semibold select-none transition-colors duration-400 cursor-pointer w-full text-center"
@@ -104,7 +104,7 @@ export default function SubcontractorsPage({ setActivePage = () => {} }) {
                 </div>
 
                 <div className="pt-4 border-t border-black/[0.06] flex items-center justify-center gap-2 text-xs text-black/55 font-sans">
-                  <span>Powered by Construct.ai</span>
+                  <span>Powered by Construkt.ai</span>
                   <span>•</span>
                   <span className="text-emerald-700 font-medium">Bidding Active</span>
                 </div>
