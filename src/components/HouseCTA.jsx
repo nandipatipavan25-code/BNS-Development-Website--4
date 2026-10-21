@@ -18,6 +18,11 @@ export default function HouseCTA({
       onStartProject();
     } else if (setActivePage) {
       setActivePage('contact');
+    } else if (typeof window !== 'undefined') {
+      window.location.hash = '#contact';
+    }
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
   return (
@@ -77,6 +82,13 @@ export default function HouseCTA({
               <div className="pt-2 flex justify-center">
                 <div
                   onClick={handleStartProject}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      handleStartProject();
+                    }
+                  }}
                   className="home-outline-btn group inline-flex items-center gap-3 px-8 py-4 rounded-full text-white text-sm sm:text-base font-sans font-medium select-none cursor-pointer transition-colors duration-400"
                 >
                   <span className="home-outline-btn-fill" aria-hidden="true" />

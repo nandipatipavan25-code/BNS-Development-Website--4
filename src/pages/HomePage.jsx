@@ -21,6 +21,7 @@ const SCROLL_SERVICES = [
     icon: Compass,
     image: '/images/services/service-01-pre-development.png',
     theme: 'light',
+    targetPage: 'preconstruction',
   },
   {
     num: '02',
@@ -31,6 +32,7 @@ const SCROLL_SERVICES = [
     icon: HardHat,
     image: '/images/services/service-02-development-services.png',
     theme: 'dark',
+    targetPage: 'ground-up',
   },
   {
     num: '03',
@@ -41,6 +43,7 @@ const SCROLL_SERVICES = [
     icon: Layers,
     image: '/images/services/service-03-design-build.png',
     theme: 'light',
+    targetPage: 'design-build',
   },
   {
     num: '04',
@@ -51,6 +54,7 @@ const SCROLL_SERVICES = [
     icon: Home,
     image: '/images/services/service-04-residential-development.png',
     theme: 'dark',
+    targetPage: 'residential',
   },
   {
     num: '05',
@@ -61,6 +65,7 @@ const SCROLL_SERVICES = [
     icon: Building2,
     image: '/images/services/service-05-commercial-development.png',
     theme: 'light',
+    targetPage: 'tenant-improvements',
   },
 ];
 
@@ -250,7 +255,7 @@ function ApproachRowItem({ item, index, isLast }) {
 // =========================================================================
 // SUB-COMPONENT: STACKING SERVICE CARD ITEM
 // =========================================================================
-function ScrollServiceCard({ service, index }) {
+function ScrollServiceCard({ service, index, onSelect }) {
   const cardRef = useRef(null);
   const isDark = service.theme === 'dark';
 
@@ -277,15 +282,18 @@ function ScrollServiceCard({ service, index }) {
         <CardBeamBorder borderRadius="24px" />
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
-          {/* Left Column: Number, Title, Description, Dummy CTA */}
+          {/* Left Column: Number, Title, Description, CTA */}
           <div className="lg:col-span-5 space-y-6">
             <div className="flex items-baseline gap-3 sm:gap-4">
               <span className="font-mono text-xs sm:text-sm font-semibold tracking-wider text-[#ED1C24] uppercase shrink-0">
                 {service.num}
               </span>
-              <h3 className={`text-2xl sm:text-3xl lg:text-[34px] font-display font-semibold tracking-tight leading-snug min-w-0 flex-1 ${
-                isDark ? 'text-white' : 'text-black/95'
-              }`}>
+              <h3
+                onClick={() => onSelect && onSelect(service.targetPage)}
+                className={`text-2xl sm:text-3xl lg:text-[34px] font-display font-semibold tracking-tight leading-snug min-w-0 flex-1 cursor-pointer transition-colors ${
+                  isDark ? 'text-white hover:text-white/85' : 'text-black/95 hover:text-[#ED1C24]'
+                }`}
+              >
                 {service.title}
               </h3>
             </div>
@@ -298,7 +306,15 @@ function ScrollServiceCard({ service, index }) {
 
             <div className="pt-2">
               <div
-                className="home-outline-btn group/btn inline-flex items-center gap-3 px-6 py-3.5 rounded-full text-xs sm:text-sm font-sans font-medium transition-colors duration-400"
+                onClick={() => onSelect && onSelect(service.targetPage)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    if (onSelect) onSelect(service.targetPage);
+                  }
+                }}
+                className="home-outline-btn group/btn inline-flex items-center gap-3 px-6 py-3.5 rounded-full text-xs sm:text-sm font-sans font-medium transition-colors duration-400 cursor-pointer"
               >
                 <span className="home-outline-btn-fill" aria-hidden="true" />
                 <span className={`relative z-10 flex items-center gap-3 transition-colors duration-400 ${
@@ -319,7 +335,10 @@ function ScrollServiceCard({ service, index }) {
 
           {/* Right Column: Architectural Image Window */}
           <div className="lg:col-span-7">
-            <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden aspect-[4/3.2] sm:aspect-[4/3] w-full bg-black/10 group/img shadow-md">
+            <div
+              onClick={() => onSelect && onSelect(service.targetPage)}
+              className="relative rounded-2xl sm:rounded-3xl overflow-hidden aspect-[4/3.2] sm:aspect-[4/3] w-full bg-black/10 group/img shadow-md cursor-pointer"
+            >
               <img
                 src={service.image}
                 alt={service.title}
@@ -484,7 +503,17 @@ export default function HomePage({ setActivePage = () => {}, setSelectedProject 
               className="pt-2 flex flex-wrap items-center gap-4"
             >
               <div
-                className="home-outline-btn group inline-flex items-center gap-3 px-7 py-3.5 rounded-full text-white text-sm font-sans font-medium select-none transition-colors duration-400"
+                onClick={() => {
+                  if (setActivePage) setActivePage('contact');
+                }}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    if (setActivePage) setActivePage('contact');
+                  }
+                }}
+                className="home-outline-btn group inline-flex items-center gap-3 px-7 py-3.5 rounded-full text-white text-sm font-sans font-medium select-none transition-colors duration-400 cursor-pointer"
               >
                 <span className="home-outline-btn-fill" aria-hidden="true" />
                 <span className="relative z-10 flex items-center gap-3">
@@ -540,8 +569,16 @@ export default function HomePage({ setActivePage = () => {}, setSelectedProject 
                     <div className="pt-2">
                       <div
                         onClick={() => {
-                          if (setActivePage) setActivePage('services');
+                          if (setActivePage) setActivePage('about');
                           window.scrollTo({ top: 0, behavior: 'smooth' });
+                        }}
+                        role="button"
+                        tabIndex={0}
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter' || e.key === ' ') {
+                            if (setActivePage) setActivePage('about');
+                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                          }
                         }}
                         className="home-outline-btn group inline-flex items-center gap-3 px-6 py-3.5 rounded-full text-xs sm:text-sm font-sans font-medium select-none transition-colors duration-400 cursor-pointer"
                       >
@@ -609,6 +646,12 @@ export default function HomePage({ setActivePage = () => {}, setSelectedProject 
                   key={service.id}
                   service={service}
                   index={idx}
+                  onSelect={(targetPage) => {
+                    if (setActivePage) {
+                      setActivePage(targetPage);
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                  }}
                 />
               ))}
             </div>
@@ -790,7 +833,17 @@ export default function HomePage({ setActivePage = () => {}, setSelectedProject 
 
                 <div className="pt-4 flex justify-center">
                   <div
-                    className="home-outline-btn group inline-flex items-center gap-3 px-8 py-4 rounded-full text-white text-sm sm:text-base font-sans font-medium select-none transition-colors duration-400"
+                    onClick={() => {
+                      if (setActivePage) setActivePage('contact');
+                    }}
+                    role="button"
+                    tabIndex={0}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        if (setActivePage) setActivePage('contact');
+                      }
+                    }}
+                    className="home-outline-btn group inline-flex items-center gap-3 px-8 py-4 rounded-full text-white text-sm sm:text-base font-sans font-medium select-none transition-colors duration-400 cursor-pointer"
                   >
                     <span className="home-outline-btn-fill" aria-hidden="true" />
                     <span className="relative z-10 flex items-center gap-3">

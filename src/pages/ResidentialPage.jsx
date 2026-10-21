@@ -375,7 +375,13 @@ export default function ResidentialPage({ setActivePage }) {
             6. CALL TO ACTION SECTION
             ======================================================== */}
         <ScrollReveal direction="up" delay={0.05}>
-          <HouseCTA setActivePage={setActivePage} />
+          <HouseCTA
+            setActivePage={setActivePage}
+            onStartProject={() => {
+              if (setActivePage) setActivePage('contact');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+          />
         </ScrollReveal>
 
       </div>
