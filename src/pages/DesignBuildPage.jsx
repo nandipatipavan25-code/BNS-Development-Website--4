@@ -140,8 +140,8 @@ export default function DesignBuildPage({ setActivePage }) {
           ======================================================== */}
       <section className="relative w-full overflow-hidden min-h-[420px] flex flex-col justify-end pt-28 sm:pt-32 pb-12 sm:pb-14 bg-[#181818] mb-8 sm:mb-10 lg:mb-12">
         <img
-          src="/images/approach/groundup-cap-01-superstructure.jpg"
-          alt="Commercial Design-Build Architectural Delivery & Corporate Superstructure"
+          src="/images/design-build-hero-magnific.jpg"
+          alt="Commercial Design-Build Integrated Steel & Glass Architecture"
           className="absolute inset-0 w-full h-full object-cover select-none brightness-95"
           loading="eager"
         />
