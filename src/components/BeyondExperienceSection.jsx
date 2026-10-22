@@ -62,7 +62,7 @@ const PROJECT_TYPES = [
   {
     num: '12',
     name: 'Aviation',
-    image: '/images/projects/marriott-residents-image-2.png',
+    image: '/images/projects/aviation-hangar.png',
   },
 ];
 

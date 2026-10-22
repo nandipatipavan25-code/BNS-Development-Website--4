@@ -492,7 +492,7 @@ export default function HomePage({ setActivePage = () => {}, setSelectedProject 
               className="space-y-3.5 text-[16px] text-white/80 font-sans leading-relaxed max-w-xl"
             >
               <p className="text-white/80">
-                BNS Development leads projects with experienced leadership from planning through completion. From residential and multifamily projects to commercial and ground-up developments, we bring practical expertise, clear communication and accountability to every project.
+                We lead projects from first plan to final handover, with practical expertise, clear communication and full accountability.
               </p>
             </motion.div>
 
