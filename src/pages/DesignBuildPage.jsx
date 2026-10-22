@@ -140,8 +140,8 @@ export default function DesignBuildPage({ setActivePage }) {
           ======================================================== */}
       <section className="relative w-full overflow-hidden min-h-[420px] flex flex-col justify-end pt-28 sm:pt-32 pb-12 sm:pb-14 bg-[#181818] mb-8 sm:mb-10 lg:mb-12">
         <img
-          src="/images/design-build-hero-magnific.jpg"
-          alt="Design-Build Architectural Delivery"
+          src="/images/approach/groundup-cap-01-superstructure.jpg"
+          alt="Commercial Design-Build Architectural Delivery & Corporate Superstructure"
           className="absolute inset-0 w-full h-full object-cover select-none brightness-95"
           loading="eager"
         />
@@ -200,8 +200,8 @@ export default function DesignBuildPage({ setActivePage }) {
             <ScrollReveal direction="left" delay={0.05} className="lg:col-span-6 h-full flex flex-col">
               <div className="relative w-full h-full min-h-[420px] rounded-2xl overflow-hidden border border-black/[0.08] bg-[#181818] shadow-xs group flex-1">
                 <img
-                  src="/images/design-build.jpg"
-                  alt="Design-Build Architectural Delivery & Integrated Construction"
+                  src="/images/services/service-03-design-build.png"
+                  alt="Commercial Design-Build Integrated Construction & Modern Steel Architecture"
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out brightness-95"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />

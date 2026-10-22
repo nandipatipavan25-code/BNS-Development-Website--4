@@ -45,7 +45,7 @@ export const servicesData = [
     subtitle: "Single-Source Accountability from Vision to Key",
     shortDesc: "Unified collaboration where architecture, engineering, and development operate as one cohesive organism, accelerating project delivery by up to 30%.",
     icon: "Layers",
-    heroImage: "/images/design-build.jpg",
+    heroImage: "/images/services/service-03-design-build.png",
     overview: "The Design-Build delivery method eliminates the traditional adversarial friction between architect and general contractor. Under BNS's single-point responsibility, clients enjoy transparent communication, consolidated liability, and rapid decision-making from initial zoning sketches through ribbon cutting.",
     subdisciplines: [
       {
